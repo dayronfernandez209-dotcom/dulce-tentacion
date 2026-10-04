@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dulce Tentación | Chocotejas</title>
+<style>
+:root{
+  --brown:#3a2117;
+  --brown2:#5a3324;
+  --gold:#d4a84f;
+  --cream:#fff8ed;
+  --white:#fff;
+  --text:#2a1b15;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.6;
+}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(58,33,23,.97);
+  padding:16px 7%;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{color:var(--gold);font-size:1.35rem;font-weight:800}
+nav a{color:white;text-decoration:none;margin-left:20px;font-size:.95rem}
+nav a:hover{color:var(--gold)}
+.hero{
+  min-height:78vh;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:70px 7%;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(212,168,79,.18),transparent 30%),
+    linear-gradient(135deg,var(--brown),#21120d);
+  color:white;
+}
+.badge{
+  display:inline-block;border:1px solid var(--gold);color:var(--gold);
+  padding:7px 15px;border-radius:30px;font-size:.85rem;margin-bottom:20px;
+}
+.hero h1{font-size:clamp(3rem,9vw,6.5rem);line-height:.95;margin-bottom:20px}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:650px;margin:auto;font-size:1.15rem;color:#f4e7d2}
+.btn{
+  display:inline-block;margin-top:28px;background:var(--gold);color:var(--brown);
+  padding:13px 24px;border-radius:30px;text-decoration:none;font-weight:800;
+  box-shadow:0 8px 25px rgba(0,0,0,.2)
+}
+section{padding:75px 7%}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title small{color:#9b7127;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.section-title h2{font-size:2.3rem;color:var(--brown);margin-top:6px}
+.products{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;max-width:900px;margin:auto
+}
+.card{
+  background:white;border-radius:22px;padding:30px;text-align:center;
+  box-shadow:0 12px 35px rgba(58,33,23,.10);border:1px solid #ead9bb;
+  transition:.25s
+}
+.card:hover{transform:translateY(-6px)}
+.product-img{width:100%;height:210px;object-fit:cover;border-radius:16px;margin-bottom:20px;display:block;}
+.choco{
+  width:105px;height:75px;margin:0 auto 20px;border-radius:20px;
+  background:linear-gradient(145deg,#70442e,#2a160e);
+  box-shadow:inset 8px 8px 15px rgba(255,255,255,.08),0 10px 18px rgba(0,0,0,.18);
+  position:relative;
+}
+.choco:after{
+  content:"✦";position:absolute;right:12px;top:7px;color:#d4a84f;font-size:18px
+}
+.card h3{color:var(--brown);font-size:1.35rem}
+.card p{color:#725b4d;margin:8px 0}
+.price{color:#a8791d;font-size:1.35rem;font-weight:900;margin-top:12px}
+.story{
+  max-width:950px;margin:auto;background:var(--brown);color:white;border-radius:28px;
+  padding:45px;box-shadow:0 15px 35px rgba(58,33,23,.18)
+}
+.story h2{color:var(--gold);margin-bottom:15px}
+.story p{color:#f4e7d2}
+.info{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;max-width:950px;margin:auto
+}
+.info-box{
+  background:white;border-radius:18px;padding:24px;border:1px solid #ead9bb;text-align:center
+}
+.icon{font-size:2rem}
+.info-box h3{color:var(--brown);margin:7px 0}
+footer{
+  background:#21120d;color:#ead9bb;text-align:center;padding:35px 7%
+}
+footer strong{color:var(--gold)}
+@media(max-width:650px){
+  header{padding:14px 5%}
+  nav a{margin-left:10px;font-size:.82rem}
+  .hero{min-height:72vh}
+  section{padding:55px 5%}
+  .story{padding:30px 24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🍫 Dulce Tentación</div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#historia">Historia</a>
+    <a href="#contacto">Pedidos</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div>
+    <div class="badge">CHOCOTEJAS ARTESANALES</div>
+    <h1>Dulce <span>Tentación</span></h1>
+    <p>El sabor que enamora. Chocotejas de manjar blanco y pecana, preparadas para endulzar tus momentos.</p>
+    <a class="btn" href="#productos">Ver productos ↓</a>
+  </div>
+</section>
+
+<section id="productos">
+  <div class="section-title">
+    <small>Nuestro sabor</small>
+    <h2>Productos</h2>
+  </div>
+  <div class="products">
+    <article class="card">
+      <img class="product-img" src="https://iperu.pe/assets/images/2025/09/chocotejas-peruanas_800x534.webp" alt="Chocotejas de chocolate con relleno de manjar y pecana">
+      <h3>Chocoteja de manjar blanco</h3>
+      <p>Una combinación dulce y cremosa para disfrutar.</p>
+      <div class="price">S/ 3.00</div>
+    </article>
+    <article class="card">
+      <img class="product-img" src="https://www.laiberica.com.pe/cdn/shop/files/Chocotejarellenademanjarblancoypecanasx35g.webp?v=1758042897&width=600" alt="Chocoteja rellena de manjar blanco y pecana">
+      <h3>Chocoteja de pecana</h3>
+      <p>Chocolate con el toque especial de la pecana.</p>
+      <div class="price">S/ 3.00</div>
+    </article>
+    <article class="card">
+      <img class="product-img" src="https://iperu.pe/assets/images/2025/09/chocotejas-peruanas_800x534.webp" alt="Caja de chocotejas">
+      <h3>Caja x 6</h3>
+      <p>Una opción ideal para compartir con tus amigos.</p>
+      <div class="price">S/ 15.00</div>
+    </article>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="story">
+    <h2>🍫 Historia del emprendimiento</h2>
+    <p>
+      Dulce Tentación nació como una idea de emprendimiento escolar con el propósito
+      de ofrecer chocotejas deliciosas, hechas con dedicación y presentadas de una
+      manera atractiva. Elegimos el manjar blanco y la pecana porque son sabores que
+      combinan muy bien con el chocolate. Nuestro objetivo es brindar un producto
+      rico, accesible y preparado con mucho entusiasmo para nuestros compañeros.
+    </p>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="section-title">
+    <small>Haz tu pedido</small>
+    <h2>Información</h2>
+  </div>
+  <div class="info">
+    <div class="info-box" style="grid-column:1/-1;">
+      <div class="icon">💬</div>
+      <h3>Haz tu pedido</h3>
+      <p>Realiza tu pedido directamente por WhatsApp.</p>
+      <a class="btn" href="https://wa.me/51914607376?text=Hola%20Dulce%20Tentaci%C3%B3n%2C%20quiero%20hacer%20un%20pedido%20de%20chocotejas." target="_blank" rel="noopener">📱 Pedir por WhatsApp</a>
+    </div>
+    <div class="info-box">
+      <div class="icon">📱</div>
+      <h3>Pedidos</h3>
+      <p>Por WhatsApp</p>
+    </div>
+    <div class="info-box">
+      <div class="icon">🏫</div>
+      <h3>Entrega</h3>
+      <p>Solo pedidos en el colegio</p>
+    </div>
+    <div class="info-box">
+      <div class="icon">🎁</div>
+      <h3>Promoción</h3>
+      <p>Caja de 6 chocotejas por S/ 15</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><strong>Dulce Tentación</strong> · Chocotejas artesanales</p>
+  <p>Hecho con dedicación para endulzar tus momentos. 🍫✨</p>
+</footer>
+</body>
+</html>
